@@ -1,0 +1,245 @@
+﻿/* network list design, people load design */
+
+.user-short-profile {
+    width: 280px;
+    min-height: 300px;
+    height: auto;
+    /*box-shadow: 0 0px 3px 3px rgba(0,0,0,.12);
+    -webkit-box-shadow: 0 0px 3px 3px rgba(0,0,0,.12);*/
+    position: relative;
+    /*margin-right: 5px;
+    margin-bottom:5px;*/
+    margin: 5px;
+    background-color: white;
+}
+
+.user-short-profile-header {
+   padding:15px 15px 0 15px;
+}
+
+.img{
+    object-fit:cover;
+}
+
+  .user-profile-pic {
+        width:60px;height:60px;border-radius:50%;
+  }
+
+    .user-profile-main-body {
+        padding: 15px;
+    }
+
+
+.network-options {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: white;
+    overflow: hidden;
+    transition: all 1s;
+    height: 0;
+}
+
+    .network-options li {
+        padding: 10px 12px;
+        font-size: 14px;
+        color: rgba(0,0,0,0.6);
+        transition: all 0.3s;
+        text-align: left;
+        cursor: pointer;
+    }
+
+        .network-options li span.fa {
+            font-size: 15px;
+            width: 20px;
+        }
+
+        .network-options li:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+
+.user-short-profile:hover > .network-options {
+    height: 60%;
+    box-shadow: 0px 0px 6px 6px rgba(0,0,0,.12);
+}
+
+
+.user-profile-main-body h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.user-profile-main-body h5 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 200;
+}
+
+.user-profile-main-body p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: 100;
+}
+
+/* company short profile design styling */
+
+/* styling of the company */
+.user-short-profile-company-header {
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    width: 100%;
+}
+
+    .user-short-profile-company-header .user-cover-pic {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+    }
+
+
+.user-profile-main-company-body {
+    padding: 20px 15px 20px 20px;
+    margin-top: -50px;
+}
+
+
+    .user-profile-main-company-body .user-profile-pic {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: white;
+        border: solid;
+        border-width: 3px;
+        border-color: white;
+        margin-bottom: 5px;
+    }
+
+    .user-profile-main-company-body h3, .user-profile-main-company-body h4, .user-profile-main-company-body p {
+        margin-bottom: 5px;
+        line-height: 1.7em;
+    }
+
+    .user-profile-main-company-body h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .user-profile-main-company-body h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        font-weight: 200;
+    }
+
+    .user-profile-main-company-body p {
+        font-size: 13px;
+        margin-bottom: 5px;
+        font-weight: 100;
+    }
+
+    .user-profile-main-company-body .company-more-info {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+        .user-profile-main-company-body .company-more-info li:nth-child(1) {
+            padding-right: 7px;
+            border-right: solid;
+            border-right-width: 1px;
+            border-right-color: rgba(0,0,0,0.6);
+        }
+
+        .user-profile-main-company-body .company-more-info li:nth-child(2) {
+            padding-left: 7px;
+        }
+
+/* end of company */
+
+/* this style may be is of the company pages */
+
+.user-profile-main-body h3, .user-profile-main-body h5, .user-profile-main-body p {
+    margin-bottom: 5px;
+    line-height: 1.7em;
+}
+
+
+.user-profile-options {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    z-index: 5;
+}
+
+    /*.user-short-profile:hover > .user-profile-options {
+                display:block;
+            }*/
+
+    .user-profile-options ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+        .user-profile-options ul li {
+            padding: 0;
+            font-size: 14px;
+        }
+
+            .user-profile-options ul li span.fa {
+                margin-left: 10px;
+                font-size: 16px;
+                background-color: white;
+                padding: 12px;
+                border-radius: 50%;
+                transition: all 0.6s;
+            }
+
+                .user-profile-options ul li span.fa:hover {
+                    background-color: darkcyan;
+                    color: white;
+                }
+
+/* end of the user profile section may be a part of the company page */
+
+#loadingfollowers, #loadingverify, #loadingnetworkrequest, #loadingfollowing, #loadingnetwork {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*#loadingfollowers li , #loadingverify li{
+                margin:20px;
+}*/
+
+.noverify, .nofollowers, .nonetwork, .nofollowing, .nonetworkrequest {
+    position: absolute;
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+
+#loadverficationrequestdiv, #loadnetworkrequestdiv, #loadfollowersdiv, #loadfollowingdiv {
+    display: none;
+}
+

@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- more meta info -->
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- jQuery libjobeary -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link href="styling/style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <main>
+        <div id="warning_message" class="fixed-alert-message">
+            You have entered a wrong password
+        </div>
+        <div class="entry-point-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6 col-xs-12 padding-0" >
+                        <div class="panel-signup-action">
+                            <s href="index.html">
+                                <img src="images/logo.png" class="page-logo" />
+                            </s>
+                            <p class="sign-main-heading">
+                                Create your account for free
+                            </p>
+                            <p class="sign-main-title">
+                                We promise, It won't take more than 2 minutes
+                            </p>
+                            <div class="forms-flex">
+                                <div id="main_form" class="form-data">
+                                    <div id="register_user_form" class="sign-inputs">
+                                        <ul>
+                                            <li>
+                                                <input id="get_firstname" type="text" placeholder="First Name">
+                                                <input id="get_lastname" type="text" placeholder="Last Name">
+                                            </li>
+                                            <li style="display:block;margin-right:20px">
+                                                <input id="get_username" type="text" maxlength="15" placeholder="Username">
+                                                <p style="font-size:14px;margin-top:10px;opacity:0.8">
+                                                    Between 6 to 15 characters, You can use letters, numbers and periods
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <input id="get_email" type="email" class="email-input" placeholder="Email">
+                                                <input id="get_dob" placeholder="Birth day">
+                                            </li>
+                                            <li style="display:block;margin-right:20px">
+                                                <input id="get_password" type="password" maxlength="25" placeholder="Password">
+                                                <p style="font-size:14px;margin-top:10px;opacity:0.8">
+                                                    Password should be between 8 to 25 characters. You can use letters, numbers and uppercase letters.
+                                                </p>
+                                            </li>
+                                            <li class="flex-right">
+                                                <span class="btn btn-md btn-primary register-user">Accept and continue</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="image_form" class="form-data">
+
+                                </div>
+                            </div>
+                            <div style="position:absolute;bottom:20px;left:50px">
+                                <a class="already-text" href="signin.html">
+                                    Sign In here
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+           </div>
+      </div>
+    </main>
+
+   
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <script src="scripting/signup.js"></script>
+
+
+</body>
+</html>

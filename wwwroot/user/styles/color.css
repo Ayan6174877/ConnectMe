@@ -1,0 +1,32 @@
+﻿/* managing colr for everything */
+
+body {
+    background-color: ghostwhite;
+   
+}
+
+.left-navbar {
+    background-color: white;
+}
+
+.left-navbar-top-icons > ul li:hover {
+    background-color: slategray;
+    color: white;
+}
+
+/* top navbar */
+
+.top-navbar {
+    background-color: white;
+}
+
+.quick-search-input input {
+    background-color: ghostwhite;
+}
+
+.quick-search-input input:focus {
+     background-color: whitesmoke;
+}
+
+
+

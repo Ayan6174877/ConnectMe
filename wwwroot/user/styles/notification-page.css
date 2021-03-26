@@ -1,0 +1,147 @@
+﻿/* styling of the notification page */
+.notification-left-panel {
+    width: 100%;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: darkcyan;
+}
+
+.left-panel-header {
+    padding: 20px;
+    text-align: left;
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: darkcyan;
+}
+
+.left-panel-footer {
+    padding: 20px;
+    text-align: left;
+    background-color: ghostwhite;
+}
+
+    .left-panel-footer ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+        .left-panel-footer ul li:nth-child(1) {
+            width: 50%;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .left-panel-footer ul li:nth-child(2) {
+            width: 50%;
+            text-align: right;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+/*  main notifications design */
+.notification-load-panel {
+    width: 100%;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: darkcyan;
+}
+
+    .notification-load-panel .loadnotification {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 16px;
+        color: rgba(0,0,0,0.6);
+    }
+
+        .notification-load-panel .loadnotification a li.load-noti-li {
+            padding: 15px 30px;
+            border-bottom: solid;
+            border-bottom-width: 0.5px;
+            border-bottom-color: rgba(0,0,0,.10);
+            background-color: white;
+            transition: all .25s;
+            position: relative;
+            width: 100%;
+        }
+
+.notitime {
+    font-size: 10px;
+    color: rgba(0,0,0,0.6);
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+.no-notification {
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 15%;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+
+    .no-notification span.fa {
+        font-size: 34px;
+        color: lightgrey;
+    }
+
+.notification-read {
+    background-color: ghostwhite !important;
+    color: rgba(0,0,0,0.4);
+}
+
+.notification-unread {
+    background-color: white;
+}
+
+/* styling for the main notifications starts here */
+
+.load-notification-content {
+    font-size: 16px;
+}
+
+.notification-post-content {
+    width: auto;
+    max-width: 80%;
+    margin-top: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    background-color: ghostwhite;
+}
+
+
+div.noti-post-text {
+    color: rgba(0,0,0,0.8);
+    line-height: 1.7em;
+    font-size: 12px;
+    word-break: break-all;
+    padding: 10px 0px;
+}
+
+
+.likenotificationimage {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+    .likenotificationimage img {
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 10px;
+    }

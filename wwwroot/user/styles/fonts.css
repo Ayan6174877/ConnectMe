@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: sans-serif;
+}
+
+.no-post-heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.no-post-para {
+    font-size: 14px;
+    line-height: 1.8em;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+.newsfeed-user-panel h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.newsfeed-user-panel p {
+    font-size: 12px;
+    line-height: 1.7em;
+    opacity: 0.7;
+    margin-top: -5px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.6em;
+    color: black;
+}
+
+.navbar-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-title {
+    font-size: 12px;
+    margin-top: -8px;
+    font-weight: 100;
+    color: rgba(0,0,0,.5);
+}
+
+.panel-topic-heading {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.show-job-company-details > .company-name {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.show-job-company-details > .company-title {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: -12px;
+}
+
+.comment-name {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -5px;
+}
+
+ .comment-title {
+    font-size: 11px;
+    color: rgba(0,0,0,.8);
+    margin-top: -10px;
+}
+
+.comment-time {
+    font-size: 11px;
+    color: rgba(0,0,0,.6);
+    margin-top: -8px;
+}
+
+.comment-para {
+    font-size: 12px;
+    font-weight: 100;
+    color: rgba(0,0,0,0.6);
+    padding: 5px;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    line-height: 1.6em;
+    word-break: break-all;
+    border-radius: 5px;
+}
+
+.profile-panel-header {
+    font-size:20px;
+    font-weight:600;
+}
+
+
+p.heading-profile {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.user-profile-data > ul li {
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 100;
+    color: black;
+}
+
+.profile-user-main-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.profile-user-main-description {
+    margin-top: 5px;
+    color: rgba(0,0,0,0.8);
+}
+
+.exp-team-title {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.exp-team-tagline {
+    font-size: 11px;
+    font-weight: 100;
+    margin-top: -8px
+}
+
+p.profile-panel-heading {
+    font-size: 26px;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height:1.7em;
+}
+
+p.profile-panel-heading-small {
+    font-size: 22px;
+    font-weight: 500;
+    opacity: 0.7;
+    line-height: 1.7em;
+}
+
+p.profile-panel-para {
+    font-size: 14px!important;
+    opacity: 0.7!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-main-name {
+        font-size: 22px;
+    }
+
+    p.profile-panel-heading {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}

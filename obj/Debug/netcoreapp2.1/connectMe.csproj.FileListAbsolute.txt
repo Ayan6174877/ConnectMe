@@ -1,0 +1,14 @@
+C:\Users\AYAN\source\repos\connectMe\bin\Debug\netcoreapp2.1\connectMe.deps.json
+C:\Users\AYAN\source\repos\connectMe\bin\Debug\netcoreapp2.1\connectMe.runtimeconfig.json
+C:\Users\AYAN\source\repos\connectMe\bin\Debug\netcoreapp2.1\connectMe.runtimeconfig.dev.json
+C:\Users\AYAN\source\repos\connectMe\bin\Debug\netcoreapp2.1\connectMe.dll
+C:\Users\AYAN\source\repos\connectMe\bin\Debug\netcoreapp2.1\connectMe.pdb
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.csprojAssemblyReference.cache
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.csproj.CoreCompileInputs.cache
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.RazorAssemblyInfo.cache
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.RazorAssemblyInfo.cs
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.AssemblyInfoInputs.cache
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.AssemblyInfo.cs
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.RazorTargetAssemblyInfo.cache
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.dll
+C:\Users\AYAN\source\repos\connectMe\obj\Debug\netcoreapp2.1\connectMe.pdb

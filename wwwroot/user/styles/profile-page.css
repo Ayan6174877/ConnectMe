@@ -1,0 +1,1733 @@
+﻿
+/* profile page */
+
+/* my resume */
+
+.cover-div {
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+
+.coverpic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.main-profile-header {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    text-align: left;
+    padding: 30px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.12);
+}
+
+.profile-data-margin {
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    padding: 30px;
+    background-color: white;
+}
+
+.image-profile-picture {
+    position: relative;
+    text-align: center;
+}
+
+
+    .show-cover-letter {
+        position: absolute;
+        left:45%;
+        top: 0px;
+        font-size: 32px;
+        color: var(--background-color) !important;
+    }
+
+    .image-profile-picture img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: solid;
+        border-width: 5px;
+        border-color: white;
+        background-color: white;
+        margin-top: -120px;
+    }
+
+     .heading-padding {
+            margin-top: 15px;
+        }
+
+        .profile-main-name {
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 0.1px;
+            color: inherit;
+        }
+
+        .profile-main-title {
+            font-size: 12px;
+            line-height: 1.7em;
+            margin-top: -7px;
+            word-break: break-all;
+            color: inherit;
+            opacity: 0.8;
+        }
+
+
+        .more-info {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+    .more-info li {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        padding-bottom: 5px;
+    }
+
+        .more-info li i {
+            font-size: 15px;
+            width: 25px;
+        }
+
+        .more-info li p {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-top: 4px;
+        }
+
+        .social-links {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 20px;
+        }
+
+            .social-links a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+        .links {
+            position: relative;
+        }
+
+        .social-links .links > span.fa-close {
+            position: absolute;
+            top: -10px;
+            font-size: 10px;
+            left: 5px;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            padding: 3px 5px;
+            border-radius: 50%;
+            display: none;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        .social-links .links:hover > span.fa-close {
+            display: block;
+        }
+
+        .social-links img {
+            width: 15px;
+            height: 15px;
+            margin: 0px 10px 10px 0;
+            cursor: pointer;
+        }
+
+        .social-links img:hover {
+            opacity: 0.7;
+        }
+
+
+    
+
+
+
+/* more options styling */
+
+.profile-action-options {
+    position: absolute;
+    display: none;
+    right: 10px;
+    bottom: 20px;
+}
+
+.profile-action-btn {
+    padding: 8px 15px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.profilw-action-modal {
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    display: none;
+}
+
+.profilw-action-modal-content {
+    position: absolute;
+    left: 40%;
+    top: 150px;
+    width: 400px;
+    background-color: white;
+}
+
+.profile-action-header {
+    position: relative;
+    padding: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+    .profile-action-header span.fa-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+.profile-action-body {
+    padding: 15px;
+}
+
+    .profile-action-body ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0;
+    }
+
+        .profile-action-body ul li {
+            padding: 15px;
+            color: rgba(0,0,0,0.8);
+            transition: 0.20s;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+        }
+
+
+            .profile-action-body ul li:hover {
+                cursor: pointer;
+                /*color: black;
+                    background-color: whitesmoke;*/
+                background-color: var(--background-color) !important;
+                color: var(--text-color) !important;
+            }
+
+@media only screen and (max-width: 768px) {
+    .cover-div {
+        width: 100%;
+        height: 130px;
+    }
+
+    .image-profile-picture img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .heading-padding {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
+
+
+
+
+/* main website part styling */
+/* navigation between pages in the profile page */
+.profile-navigations {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    padding: 10px 0 0 0;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+    .profile-navigations a {
+        display: flex;
+        flex: none;
+        flex-shrink: 0;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 14px;
+        color: rgba(0,0,0,.6);
+        border-bottom: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: transparent;
+        transition: 0.50s;
+        cursor: pointer;
+        width: auto;
+        margin-right: 5px;
+    }
+
+        .profile-navigations a.active-profile {
+            border-bottom-color: var(--background-color) !important;
+        }
+
+        .profile-navigations a:hover {
+            border-bottom-color: var(--background-color) !important;
+        }
+
+/* section to add section ( exp, education )*/
+
+.explore-section-panel {
+    position: relative;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    margin-top: 10px;
+    background-color:white;
+}
+
+.profile-sections-count {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+}
+
+.profile-section-count-footer {
+    font-size: 13px;
+    text-align: left;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+    .profile-section-count-footer img {
+        text-align: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+.profile-sections-count {
+    display: none;
+    padding: 0px 0px 10px 00px;
+}
+
+    .profile-sections-count > div.profile-sections-add {
+        width: 100%;
+        position: relative;
+        display: flex;
+        padding: 5px 15px;
+        border-bottom: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0,0,0,.12);
+    }
+
+.profile-sections-add > span.fa-pencil, .profile-sections-add > span.fa-play, .profile-sections-add > span.fa-id-card-o {
+    margin-top: 10px;
+    font-size: 24px;
+    width: auto;
+    min-width: 40px;
+    margin-right: 10px;
+}
+
+.profile-sections-count > div.profile-sections-add p.profile-data-score {
+    font-size: 24px;
+    font-weight: 600;
+    color: inherit;
+    width: auto;
+    min-width: 40px;
+    margin-right: 10px;
+}
+
+.profile-sections-count > div.profile-sections-add > div {
+    font-size: 13px;
+    font-weight: 300;
+    width: 100%;
+    line-height: 1.6em;
+    margin-top: 5px;
+    padding: 0px 0 15px 0;
+}
+
+.profile-sections-count span.fa-plus, .profile-sections-count span.fa-check {
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3px 5px !important;
+    background-color: white;
+    transition: all 0.25s;
+    -webkit-text-stroke: 2px white;
+    display: none;
+}
+
+    .profile-sections-count span.fa-plus:hover {
+        background-color: whitesmoke;
+    }
+
+.profile-sections-add:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* end of explore profile section */
+
+/* profile strength styles */
+.strength-panel-flex {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.strength-panels {
+    display: flex;
+    flex: none;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 280px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.strength-heading {
+    padding: 20px;
+}
+
+    .strength-heading p.strngth-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .strength-heading p.strngth-title-para {
+        font-size: 12px;
+        opacity: 0.7;
+        margin-top: -5px;
+    }
+
+.profile-complete-body {
+    padding: 5px 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.profile-complete-body-left {
+    display: block;
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.profile-complete-body-right {
+    display: block;
+    width: 50%;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.strength-counts {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--background-color);
+}
+
+.strength-remarks {
+    font-size: 12px;
+    margin-top: -8px;
+}
+
+
+.div-meter-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.10);
+    overflow: hidden;
+}
+
+.meter-circle-filled-one {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    height: var(--strength1);
+    width: 100px;
+    transition: all 1s;
+}
+
+.meter-circle-filled-two {
+    position: relative;
+    display: inline-block;
+    background-color: var(--background-color);
+    height: var(--strength2);
+    width: 100px;
+    transition: all 1s;
+}
+
+.strength-footer {
+    padding: 15px;
+    font-size: 14px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.visitor-profile {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+    .visitor-profile img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-left: -5px;
+        border: solid;
+        border-width: 1px;
+        border-color: white;
+    }
+
+/* profile main  part */
+
+
+/* main profile data about, exp else designs */
+.short-profile-image {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+    .short-profile-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+/* profile panels */
+
+.profile-panel {
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    /*box-shadow: 0 0 10px 0 rgba(0,0,0,.12);*/
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+.profile-panel-default {
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    /*box-shadow: 0 0 10px 0 rgba(0,0,0,.12);*/
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+    .profile-panel-default > .profile-panel-header {
+        position: relative;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .profile-panel-default > .profile-panel-body {
+        padding: 25px;
+    }
+
+.profile-panel-header {
+    position: relative;
+    padding: 10px 25px;
+}
+
+.profile-panel-body {
+    padding: 20px 25px;
+}
+
+.profile-panel-footer {
+    padding: 15px;
+    background-color: whitesmoke;
+}
+
+.no-horizontal-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.no-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+/* stylign form thead main contents like experience- education, projects, skills etc */
+.profile-section-header {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    color: black;
+    border-bottom: none;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(0,0,0,.12);
+}
+
+.scroll-overflow-buttons {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+}
+
+    .scroll-overflow-buttons > span.fa {
+        display: inline-block;
+        margin: 3px;
+        font-size: 18px;
+        padding: 5px 11px;
+        border: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,0.8);
+        border-radius: 50%;
+    }
+
+        .scroll-overflow-buttons > span.fa:hover {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+.profile-data-scroll-horizontal {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    width: 100%;
+    z-index: 5;
+}
+
+div {
+    -ms-overflow-style: none;
+}
+
+    div::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+
+.profile-data-flex {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.profile-flex-panels {
+    display: flex;
+    flex: none;
+    position: relative;
+    display: inline-block;
+    padding: 25px 25px 25px 25px;
+    width: 250px;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    border-radius: 15px;
+    text-align: left;
+    margin-right: 15px;
+    transition: all 0.25s;
+}
+
+@media screen and (max-width:768px) {
+    .profile-flex-panels {
+        padding: 15px;
+        width: 250px;
+    }
+}
+
+.profile-flex-panels > .profile-data-options {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    cursor: default;
+}
+
+.profile-flex-panels:hover {
+    opacity: 1;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.12);
+}
+
+.profile-flex-panels > a img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-flex-panels > ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+    .profile-flex-panels > ul li {
+        padding-bottom: 5px;
+    }
+
+        .profile-flex-panels > ul li:nth-child(1) {
+            width: 100%;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.6em;
+            display: flex;
+        }
+
+            .profile-flex-panels > ul li:nth-child(1) a img {
+                width: 20px;
+                height: 20px;
+                margin-left: 8px;
+                border-radius: 50%;
+                border: solid;
+                border-width: 1px;
+                border-color: white;
+                margin-top: -2px;
+            }
+
+        .profile-flex-panels > ul li:nth-child(2) {
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 1.6em;
+            opacity: 0.8;
+            padding-bottom: 10px;
+            border-bottom: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgba(0,0,0,.12);
+        }
+
+        .profile-flex-panels > ul li:nth-child(3) {
+            font-size: 12px;
+            font-weight: 100;
+            line-height: 1.5em;
+            opacity: 0.6;
+            padding-top: 10px;
+        }
+
+
+        .show-data-details {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            border: solid;
+            border-width: 1px;
+            border-color: rgba(0,0,0,.12);
+            font-size: 14px;
+            padding: 8px 10px;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+            .show-data-details:hover {
+                background-color: whitesmoke;
+            }
+
+
+
+
+/* profile data */
+.user-profile-data {
+    position: relative;
+    padding: 0;
+}
+
+    .user-profile-data > .profile-data-options {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    .user-profile-data:hover > .profile-data-options {
+        display: block;
+    }
+
+    .user-profile-data > ul {
+        list-style: none;
+        padding: 15px 25px;
+    }
+
+        .user-profile-data > ul li {
+            padding: 0;
+        }
+
+            .user-profile-data > ul li:nth-child(1) p {
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .user-profile-data > ul li a {
+                text-decoration: none;
+                color: darkcyan;
+            }
+
+.team-data {
+    margin-top: 15px;
+}
+
+    .team-data > h3 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+.exp-teams {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.team-panel {
+    width: 180px;
+    padding: 10px;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+    .team-panel:hover {
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.12);
+    }
+
+@media only screen and (max-width: 768px) {
+    .exp-teams {
+        display: block;
+    }
+
+    .team-panel {
+        width: 100%;
+    }
+}
+
+.profile-data-options ul {
+    width: 220px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+    .profile-data-options ul li {
+        padding: 10px 15px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+.profile-data-options li span.fa {
+    font-size: 14px;
+    width: 25px;
+}
+
+.profile-data-options ul li:hover {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+/* chnage color as per theme */
+@media only screen and (max-width : 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+/* chnage color as per theme */
+.profile-main-section-panel {
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,.12);
+}
+
+.profile-main-section-panel-header {
+    padding: 20px 20px 5px 20px;
+}
+
+.profile-main-section-panel-body {
+    padding: 20px 20px;
+}
+
+.profile-main-section-panel-footer {
+    padding: 10px 20px;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+    .profile-main-section-panel-footer:hover {
+        background-color: whitesmoke;
+    }
+/* skill panel styling */
+.skill-panel-body {
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.load-skill {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+p.skill-name {
+    font-size: 16px;
+    font-weight: 500;
+    width: 100px;
+}
+
+.skill-meter-scale {
+    width: 100%;
+    height: 5px;
+    background-color: darkcyan;
+    margin: 0 15px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.skill-endorse-img {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 2px;
+}
+
+    .skill-endorse-img img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+.skill-div-flex {
+    display: flex;
+    width: 40%;
+    margin: 0px 25px;
+    padding: 15px 0;
+}
+
+@media screen and (max-width:768px) {
+    .skill-div-flex {
+        width: 100%;
+    }
+}
+
+.skill-div-flex .endorsement-score {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    min-width: 70px;
+}
+
+.skill-div-flex > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-top: 5px;
+}
+
+    .skill-div-flex > ul li:nth-child(1) {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.6em;
+        padding-bottom: 10px;
+        border-bottom: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0,0,0,.12);
+    }
+
+    .skill-div-flex > ul li:nth-child(2) {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5px;
+    }
+
+        .skill-div-flex > ul li:nth-child(2) img {
+            width: 25px;
+            height: 25px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+/* experience panel styling */
+/* extreme right side styling of profile page  */
+.margin-top-15 {
+    margin-top: 15px;
+}
+/* applying styling from here to all data inside profile panel */
+.profile-main-section-panel, .profile-main-section-panel p, .profile-main-section-panel a, .profile-main-section-panel li {
+    font-size: 16px;
+}
+/* styling of the data rendered inside overlay to show verified user*/
+#loadingverifyuser {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    padding-right: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    max-height: 75vh;
+}
+
+    #loadingverifyuser::-webkit-scrollbar {
+        width: 7px;
+        background: white;
+    }
+
+    #loadingverifyuser::-webkit-scrollbar {
+        background: lightgrey;
+        cursor: alias;
+    }
+
+    #loadingverifyuser::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+
+    #loadingverifyuser::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+
+    #loadingverifyuser li .user-short-profile {
+        width: 250px;
+        margin-right: 2px !important;
+        margin-bottom: 2px !important;
+        height: auto;
+        min-height: 370px;
+    }
+
+        #loadingverifyuser li .user-short-profile .user-short-profile-company-header {
+            height: 130px;
+        }
+
+        #loadingverifyuser li .user-short-profile .user-short-profile-header {
+            height: 130px;
+        }
+
+        #loadingverifyuser li .user-short-profile .user-profile-main-body h3, #loadingverifyuser li .user-short-profile .user-profile-main-company-body h3 {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        #loadingverifyuser li .user-short-profile .user-profile-main-body h4, #loadingverifyuser li .user-short-profile .user-profile-main-company-body h4 {
+            font-size: 15px;
+        }
+
+        #loadingverifyuser li .user-short-profile .verify-request-option {
+            position: absolute;
+            top: 90px;
+            right: 15px;
+        }
+
+            #loadingverifyuser li .user-short-profile .verify-request-option span.fa {
+                font-size: 16px;
+                color: black;
+                background-color: white;
+                padding: 8px 10px;
+                border-radius: 50%;
+                transition: all 1s;
+            }
+
+                #loadingverifyuser li .user-short-profile .verify-request-option span.fa:hover {
+                    color: white;
+                    background-color: maroon;
+                }
+
+=
+/* when team loading inside overlay screen */
+#loadingteams {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#loadingteams .load-team-panel {
+    width: 270px;
+    min-height: 300px;
+    height: auto;
+    position: relative;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    box-shadow: none !important;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: white;
+    color: black !important;
+}
+
+    #loadingteams .load-team-panel .load-team-panel-header {
+        height: 150px;
+        width: 100%;
+    }
+
+        #loadingteams .load-team-panel .load-team-panel-header img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+
+    #loadingteams .load-team-panel .load-team-panel-body {
+        padding: 10px;
+    }
+
+        #loadingteams .load-team-panel .load-team-panel-body .team-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+#loadingteams .adding-teams {
+    position: absolute;
+    right: 15px;
+    top: 105px;
+}
+
+    #loadingteams .adding-teams span.fa {
+        font-size: 16px;
+        color: black;
+        background-color: white;
+        padding: 8px 10px;
+        border-radius: 50%;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+        #loadingteams .adding-teams span.fa:hover {
+            color: white;
+            background-color: maroon;
+        }
+/* team member of the projects */
+.project-team-member {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.load-project-member-list {
+    position: relative;
+}
+
+.project-team-profile-size {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.project-team-remove {
+    position: absolute;
+    top: -5px;
+    left: 25px;
+    display: none;
+}
+
+.load-project-member-list:hover > .project-team-remove {
+    display: block;
+}
+
+.project-team-remove span.fa {
+    font-size: 8px;
+    color: white;
+    background-color: black;
+    padding: 3px 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/** when project team members need to be shown inside the ovberlay screen*/
+.addprojectmembers {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    max-height: 80vh;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#loadteammembers {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    max-height: 80vh;
+}
+
+    #loadteammembers li .user-short-profile {
+        margin-right: 2px !important;
+        margin-bottom: 2px !important;
+        width: 260px !important;
+    }
+
+.project-team-add {
+    position: absolute;
+    top: 115px;
+    right: 20px;
+}
+
+    .project-team-add span.fa {
+        font-size: 12px;
+        color: black;
+        background-color: white;
+        padding: 8px 10px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+        .project-team-add span.fa:hover {
+            background-color: maroon;
+            color: white;
+        }
+
+.profile-action-dropdown {
+    margin: 15px;
+}
+
+    .profile-action-dropdown .btn {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        border-radius: 35px;
+    }
+
+    .profile-action-dropdown .carat {
+        color: var(--text-color);
+    }
+
+    .profile-action-dropdown ul {
+        margin-top: 10px;
+        padding: 0;
+        list-style: none;
+        width: 120%;
+        text-align: left;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,.12);
+    }
+
+        .profile-action-dropdown ul li {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            line-height: 1.6em;
+        }
+
+            .profile-action-dropdown ul li span.fa {
+                font-size: 14px;
+                width: 25px;
+            }
+
+            .profile-action-dropdown ul li:hover {
+                background-color: var(--background-color);
+                color: var(--text-color);
+            }
+
+/* styling of share my profile modal box */
+.profile-share-body {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+    .profile-share-body span.fa-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 16px;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+.profile-share-left-side {
+    width: 40%;
+    background-color: whitesmoke;
+    align-content: center;
+    padding-top: 8%;
+    min-height: 60vh;
+    height: auto;
+}
+
+.profile-share-demo-panel {
+    width: 200px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    text-align: left;
+}
+
+.profile-share-right-side {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    min-height: 60vh;
+    height: auto;
+    position: relative;
+}
+
+.profile-share-demo-panel-header {
+    width: 100%;
+}
+
+.profile-share-panel-body {
+    padding: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width:768px) {
+
+    .profile-share-body {
+        display: block;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .profile-share-left-side {
+        width: 100%;
+        height: 20vh;
+        display: none;
+    }
+
+    .profile-share-right-side {
+        width: 100%;
+    }
+}
+
+.modal-box-footer {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 13px;
+    color: white;
+    background-color: green;
+    display: none;
+}
+
+.share_profile_button {
+    float: right;
+    padding: 5px 12px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.btn-disable {
+    pointer-events: none;
+    opacity: 0.6;
+}
+/* endorsed skills design */
+ul.endorse-skill-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+
+    ul.endorse-skill-list li {
+        padding: 20px 5px;
+    }
+
+        ul.endorse-skill-list li:not(:last-child) {
+            border-bottom: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: rgba(0,0,0,.12);
+        }
+
+.skill-endorse-load-div {
+    display: inline-block;
+    width: 100%;
+}
+
+.skill-endorse-left-side {
+    display: flex;
+    float: left;
+}
+
+    .skill-endorse-left-side span.endorse-text-count {
+        font-size: 16px;
+        color: black;
+        border: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,.12);
+        border-radius: 50%;
+        background-color: transparent;
+        transition: all .25s;
+        margin-right: 20px;
+        text-align: center;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        padding-top: 11px;
+    }
+
+        .skill-endorse-left-side span.endorse-text-count:hover {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+.endorse-tex {
+    display: block;
+    margin-top: 0px;
+}
+
+.skill-text-data {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+    .skill-text-data p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.6em;
+        width: 350px;
+    }
+
+.skill-rating-meter {
+    margin-top: 10px;
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12) transparent transparent transparent;
+    padding-top: 15px;
+    display: none;
+}
+
+.endorse-option {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+    .endorse-option span {
+        padding: 6px 12px;
+        border: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,.12);
+        border-radius: 35px;
+        color: black;
+        background-color: transparent;
+        transition-delay: .15s;
+        margin-right: 10px;
+        font-weight: 100;
+        font-size: 15px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .endorse-option span:hover {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+.skill-endorse-right-side {
+    display: flex;
+    float: right;
+    margin-top: 15px;
+}
+
+    .skill-endorse-right-side img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 3px;
+    }
+
+    .skill-endorse-right-side div.total-endorse {
+        margin-left: 3px;
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        text-align: center;
+        background-color: white;
+        border: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,.12);
+        border-radius: 50%;
+        padding-top: 1px;
+    }
+
+@media only screen and (max-width:768px) {
+    .skill-text-data p {
+        width: 100%;
+    }
+
+
+    .skill-endorse-left-side {
+        display: block;
+        float: none;
+    }
+
+        .skill-endorse-left-side span.endorse-text-count {
+            display: block;
+            font-size: 12px;
+            height: 40px;
+            width: 40px;
+            padding-top: 5px;
+        }
+
+    .skill-endorse-right-side {
+        width: 100%;
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+
+.active-skill {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+/* end of endorsed skill design */
+.profile-main-section-panel .suggestion-user-panel ul {
+    margin-bottom: 25px;
+}
+
+
+/* proflie sign up modal s when session is not active design */
+
+.reg-setup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    display: none;
+    overflow-y: auto;
+}
+
+.reg-setup-dialogue {
+    position: relative;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    background-color: white;
+    border-radius: 15px;
+}
+
+.reg-setup-body {
+    position: relative;
+    width: 500px;
+    height: auto;
+    padding: 30px;
+}
+
+.short-profile-dp {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.short-profile-name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.short-profile-title {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: -5px;
+}
+
+.sign-inputs ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    margin-top: 25px;
+    width: 100%;
+}
+
+    .sign-inputs ul li {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+.flex-right {
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sign-inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0,.12);
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    margin-right: 15px;
+}
+
+    .sign-inputs input:focus {
+        border-color: slateblue;
+        background-color: white;
+    }
+
+.email-input {
+    width: 140% !important;
+}
+
+.already-text {
+    font-size: 16px;
+    text-decoration: none !important;
+    color: black;
+}
+
+
+@media screen and (max-width:768px) {
+    .reg-setup-dialogue {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .reg-setup-body {
+        height: 100vh;
+    }
+}
+
+.network-request-panel {
+    position: fixed;
+    /*bottom:0;right:50px;*/
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    display: none;
+    background-color: white;
+    z-index: 30;
+}
+
+.network-request-header {
+    position: relative;
+    background-color: whitesmoke;
+    padding: 5px 10px;
+}
+
+    .network-request-header span.fa-close {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 22px;
+    }
+
+.network-request-body {
+    padding: 20px;
+}
+
+.request-btn {
+    font-size: 14px;
+    padding: 8px 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--background-color);
+    transition: all 0.25s;
+    cursor: pointer;
+    border-radius: 35px;
+    margin: 10px 5px;
+}
+
+.request-btn-filled {
+    font-size: 14px;
+    padding: 8px 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--background-color);
+    transition: all 0.25s;
+    cursor: pointer;
+    border-radius: 35px;
+    margin: 10px 5px;
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+.request-btn:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}

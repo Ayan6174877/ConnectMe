@@ -1,0 +1,179 @@
+﻿/* network page designs */
+.col-md-3 {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.div-panel{
+    width:100%;
+    border-radius:15px;
+    border:solid;border-width:1px;border-color:rgba(0,0,0,.12);
+    background-color:white;
+}
+
+.div-panel-body{
+    padding:20px;
+}
+
+    .div-panel-body > img{
+        width:50px;height:60px;
+        border-radius:50%;
+    }
+
+.network-navigation-tabs {
+    width: 100%;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12) transparent transparent transparent;
+    padding:20px;
+}
+
+    .network-navigation-tabs ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+       .network-navigation-tabs ul li {
+            padding: 10px 0;
+            font-size: 16px;
+            width: 100%;
+            opacity: 0.6;
+            cursor: pointer;
+            position:relative;
+        }
+
+        .network-navigation-tabs ul li:hover {
+            opacity: 1;
+        }
+
+        .network-navigation-tabs ul li span{
+            position:absolute;
+            right:5px;
+        }
+
+
+    .active-navigation-tab {
+        opacity: 1 !important;
+    }
+
+    .network-panel{
+        border:solid;border-width:1px;
+        border-color:rgba(0,0,0,.12);
+        background-color:white;
+    }
+
+
+    .network-heading-div {
+        width: 100%;
+        border: solid;
+        border-width: 1px;
+        border-color: transparent transparent rgba(0,0,0,.12) transparent;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 400;
+        background-color: white;
+    }
+
+/* designinging the short profile to load network list, folowers and else */
+    .user-limited-profile {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border: solid;
+        border-width: 1px;
+        border-color:transparent transparent rgba(0,0,0,.12) transparent;
+        padding: 20px;
+        display:flex;
+        align-items:flex-start;
+    }
+
+    .block-network{
+        display:block;
+        width:350px;
+    }
+
+    .user-limited-profile img{
+        width:60px;height:60px;
+        border-radius:50%;margin-bottom:15px;
+        margin-right:15px;margin-top:5px;
+    }
+      
+   .user-limited-profile .user-limited-name{
+        font-size:16px;font-weight:500;
+        word-break:break-all;
+    }
+
+    .user-limited-title {
+        font-size: 13px;
+        margin-top: -8px;
+        opacity: 0.7;
+        line-height: 1.7em;
+    }
+
+.user-limited-company {
+    font-size: 11px;
+    font-weight: 100;
+    margin-top: 0px;
+    opacity: 0.5;
+    line-height: 1.5em;
+}
+
+.network-btn {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 35px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(0,0,0,.12);
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+    .network-btn:hover{
+        background-color:red;
+        color:white;
+    }
+
+    .nonetwork {
+        background-color: white;
+        border: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,.12);
+        padding:30px;
+    }
+
+    .request-btn-div{
+        position:absolute;
+        right:5px;
+        top:10px;
+    }
+
+    .request-btn-style{
+        font-size:20px;
+        padding:6px 8px;
+        border-radius:50%;
+        border:solid;border-width:1px;
+        border-color:rgba(0,0,0,.10);
+        margin-left:5px;
+        cursor:pointer;
+    }
+
+.request-btn-style:hover{
+    background-color:ghostwhite;
+}
+
+
+    @media screen and (max-width:768px) {
+        .user-limited-profile img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+
+
